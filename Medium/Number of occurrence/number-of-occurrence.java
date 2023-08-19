@@ -40,9 +40,10 @@ class Solution {
         // code here
         int count=0;
         for(int i=0;i<n;i++){
-            if(x==arr[i]){
+            if(x==arr[i])
                 count++;
-            }
+            if(arr[i]>x)
+                break;
         }
         return count;
     }
