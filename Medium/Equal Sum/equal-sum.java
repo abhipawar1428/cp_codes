@@ -33,8 +33,10 @@ class Solution {
     String equilibrium(int arr[], int n) {
         // code here
         for(int i=1;i<arr.length;i++){
-            arr[i]=arr[i]+arr[i-1];
+            arr[i]=arr[i]+arr[i-1];       //prefix sum
             //System.out.println(nums[i]);
+            //1 2 3  1  2
+            //1 3 6  7  9
         }
         for(int i=0;i<n;i++){
             int leftsum=0;
