@@ -1,4 +1,4 @@
-<h2><a href="https://practice.geeksforgeeks.org/problems/bubble-sort/1?page=1&company[]=Accenture&sortBy=submissions">Bubble Sort</a></h2><h3>Difficulty Level : Easy</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given an Integer <strong>N</strong> and a list <strong>arr</strong>. Sort the array using bubble sort algorithm.</span><br>
+<h2><a href="https://practice.geeksforgeeks.org/problems/bubble-sort/1?utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab">Bubble Sort</a></h2><h3>Difficulty Level : Easy</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Given an Integer <strong>N</strong> and a list <strong>arr</strong>. Sort the array using bubble sort algorithm.</span><br>
 <span style="font-size:18px"><strong>Example 1:</strong></span></p>
 
 <pre><span style="font-size:18px"><strong>Input</strong>: 
