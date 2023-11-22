@@ -23,7 +23,7 @@ class Solution {
                    j++;
                    if(j==al.size()){
                        sb.append(s.substring(i+1));
-                       break;
+                       return sb.toString();
                    }
                }else{
                    sb.append(s.charAt(i));
