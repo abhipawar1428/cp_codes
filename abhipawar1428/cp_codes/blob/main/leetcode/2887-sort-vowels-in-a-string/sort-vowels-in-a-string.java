@@ -21,6 +21,10 @@ class Solution {
                s.charAt(i)=='u' || s.charAt(i)=='U' ){
                    sb.append(al.get(j));
                    j++;
+                   if(j==al.size()){
+                       sb.append(s.substring(i+1));
+                       break;
+                   }
                }else{
                    sb.append(s.charAt(i));
                }
