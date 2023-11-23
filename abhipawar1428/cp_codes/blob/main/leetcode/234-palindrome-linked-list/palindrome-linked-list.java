@@ -10,6 +10,9 @@
  */
 class Solution {
     public boolean isPalindrome(ListNode head) {
+        if(head.next==null){
+            return true;
+        }
         ArrayList<Integer> al=new ArrayList<>();
         ListNode temp=head;
 
@@ -18,13 +21,16 @@ class Solution {
             temp=temp.next;
         }
         temp=head;
-        int i=0;
-        Collections.reverse(al);
-        while(temp!=null){
+        int i=al.size()-1;
+        int size=al.size();
+        while(true){
             if(temp.val != al.get(i)){
                 return false;
             }
-            i++;
+            i--;
+            if(i==(size/2)-1){
+                break;
+            }
             temp=temp.next;
         }
         return true;
