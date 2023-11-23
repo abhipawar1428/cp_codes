@@ -17,17 +17,15 @@ class Solution {
         ListNode temp2=head;
         ListNode temp3=head;
 
-        int count=0;
-
-    
-        while(count!=right){
-            temp3=temp3.next;
-            count++;
-        }
-        count=1;
+        int count=1;
         while(left != count){
             temp1=temp2;
             temp2=temp2.next;
+            count++;
+        }
+        count=0;
+        while(count!=right){
+            temp3=temp3.next;
             count++;
         }
         ListNode head2=null;
