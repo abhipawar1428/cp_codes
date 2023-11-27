@@ -10,6 +10,9 @@
  */
 class Solution {
     public ListNode removeNodes(ListNode head) {
+        if(head==null || head.next==null){
+            return head;
+        }
         head=rev(head);
         ListNode temp2=head;
         ListNode temp=head;
