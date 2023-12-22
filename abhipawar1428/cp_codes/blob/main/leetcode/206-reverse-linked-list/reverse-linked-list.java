@@ -14,14 +14,9 @@ class Solution {
         ListNode temp2=null;
 
         while(temp1!=null){
-            if(temp2==null){
-                ListNode newNode=new ListNode(temp1.val);
-                temp2=newNode;
-            }else{
-                ListNode newNode=new ListNode(temp1.val);
-                newNode.next=temp2;
-                temp2=newNode;
-            }
+            ListNode newNode=new ListNode(temp1.val);
+            newNode.next=temp2;
+            temp2=newNode;
             temp1=temp1.next;
         }
         return temp2;
