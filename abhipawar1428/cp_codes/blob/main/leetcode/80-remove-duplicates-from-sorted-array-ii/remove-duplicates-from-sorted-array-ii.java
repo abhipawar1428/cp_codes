@@ -1,14 +1,7 @@
 class Solution {
     public int removeDuplicates(int[] nums) {
         if(nums.length<3){
-            if(nums.length==0){
-                return 0;
-            }else if(nums.length==1){
-                return 1;
-            }else{
-                    return 2;
-                
-            }
+            return nums.length;
         }
         int slow=0;
         int fast=0;
