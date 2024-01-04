@@ -18,7 +18,6 @@ class Solution {
                         if((ch==')' && ch2=='(') || (ch==']' && ch2=='[') || (ch=='}' && ch2=='{')){
                             stack.pop();
                         }else{
-                            System.out.print("...");
                             return false;
                         }
                     }
