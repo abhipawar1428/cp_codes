@@ -2,8 +2,6 @@ class Solution {
     public boolean isValid(String s) {
         if(s.length()%2==1){
             return false;
-        }else if(s.length()==0){
-            return true;
         }else{
             Stack<Character> stack=new Stack<>();
             for(int i=0;i<s.length();i++){
