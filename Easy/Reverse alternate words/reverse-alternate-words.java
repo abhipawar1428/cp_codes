@@ -33,7 +33,7 @@ class Solution
                 
             }else{
                 StringBuffer sb1=new StringBuffer(str);
-                sb1=sb1.reverse();
+                sb1.reverse();
                 sb.append(sb1);
                 sb.append(" ");
             }
