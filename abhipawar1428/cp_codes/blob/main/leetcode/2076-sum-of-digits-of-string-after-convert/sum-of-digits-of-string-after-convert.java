@@ -10,7 +10,8 @@ class Solution {
 
         if(k>=1){
             for(int i=0;i<sb.length();i++){
-                num=num+Character.getNumericValue(sb.charAt(i));
+                //num=num+Character.getNumericValue(sb.charAt(i));
+                num=num+(sb.charAt(i)-'0');
             }
             k--;
         }
