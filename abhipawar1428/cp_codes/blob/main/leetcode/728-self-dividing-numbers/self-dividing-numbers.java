@@ -7,14 +7,12 @@ class Solution {
             num=i;
             flag=0;
             while(num!=0){
-                if(num%10==0){
+                int r=num%10;
+                if(r==0 || i%r != 0){
                     flag=1;
                     break;
                 }
-                if(i%(num%10) != 0){
-                    flag=1;
-                    break;
-                }
+                
                 num/=10;
             }
             if(flag==0){
