@@ -1,9 +1,11 @@
 class Solution {
     public List<Integer> selfDividingNumbers(int left, int right) {
         ArrayList al=new ArrayList<>();
+        int num=left;
+        int flag=0;
         for(int i=left;i<=right;i++){
-            int num=i;
-            int flag=0;
+            num=i;
+            flag=0;
             while(num!=0){
                 if(num%10==0){
                     flag=1;
