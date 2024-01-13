@@ -13,12 +13,11 @@ class Solution {
         for(char key:map.keySet()){
             int c1=map.get(key);
             int c2=0;
-            if(map2.get(key) != null){
-                c2=map2.get(key);
-                if(c1-c2 >0)
-                    count=count+(map.get(key)-map2.get(key));
-            }else{
-                count=count+(map.get(key)-0);
+            if(map2.containsKey(key) && map.get(key)>map2.get(key)){
+                count=count+(map.get(key)-map2.get(key));
+            }
+            if(!map2.containsKey(key)){
+                count=count+(map.get(key));
             }
         }
         return count;
