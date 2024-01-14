@@ -6,11 +6,13 @@ class Solution {
         }
         int count=0;
         for(int key:countMap.keySet()){
-            int num=countMap.get(key);
-            if(num==1){
+            if(countMap.get(key)==1){
                 return -1;
             }
-            count+=(num+2)/3;           
+            count+=countMap.get(key)/3;
+            if(countMap.get(key)%3!=0){
+                count++;
+            }
         }
         return count;
     }
