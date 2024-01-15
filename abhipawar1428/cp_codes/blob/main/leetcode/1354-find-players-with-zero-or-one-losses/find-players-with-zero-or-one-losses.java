@@ -1,29 +1,29 @@
 class Solution {
     public List<List<Integer>> findWinners(int[][] matches) {
-        TreeMap<Integer,Integer> defMap=new TreeMap<>();
+        TreeMap<Integer,Integer> Map=new TreeMap<>();
         for(int i=0;i<matches.length;i++){
-            defMap.put(matches[i][1],defMap.getOrDefault(matches[i][1],0)+1);
+            Map.put(matches[i][1],Map.getOrDefault(matches[i][1],0)+1);
         }
-        ArrayList<Integer> d=new ArrayList<>();
-        for(int key:defMap.keySet()){
-            if(defMap.get(key)==1){
-                d.add(key);
+        ArrayList<Integer> losers=new ArrayList<>();
+        for(int key:Map.keySet()){
+            if(Map.get(key)==1){
+                losers.add(key);
             }
         }
         TreeSet<Integer> tSet=new TreeSet<>();
-        ArrayList<Integer> w=new ArrayList<>();
+        ArrayList<Integer> winners=new ArrayList<>();
         for(int i=0;i<matches.length;i++){
-            if(!defMap.containsKey(matches[i][0])){
+            if(!Map.containsKey(matches[i][0])){
                 tSet.add(matches[i][0]);
             }
         }
         for(int key:tSet){
-            w.add(key);
+            winners.add(key);
         }
         //Collections.sort(w);
         List<List<Integer>> ret=new ArrayList<>();
-        ret.add(w);
-        ret.add(d);
+        ret.add(winners);
+        ret.add(losers);
         return ret;
 
     }
