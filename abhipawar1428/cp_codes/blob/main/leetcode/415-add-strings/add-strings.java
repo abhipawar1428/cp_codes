@@ -4,7 +4,7 @@ class Solution {
         int ptr2=num2.length()-1;
         
         int carry=0;
-        StringBuffer sb=new StringBuffer();
+        StringBuilder sb=new StringBuilder();
         while(ptr1!=-1 && ptr2!=-1){
             int num=(num1.charAt(ptr1)-'0') + (num2.charAt(ptr2)-'0')+carry;
             System.out.println(num);
