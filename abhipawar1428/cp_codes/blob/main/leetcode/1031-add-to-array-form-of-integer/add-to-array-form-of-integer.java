@@ -4,7 +4,7 @@ class Solution {
         int ptr1=num.length-1;
         int ptr2=num2.length()-1;
 
-        List<Integer> ret=new ArrayList<>();
+        List<Integer> ret=new LinkedList<>();
         int carry=0;
         while(ptr1!=-1 && ptr2!=-1){
             int sum=num[ptr1]+(num2.charAt(ptr2)-'0') + carry;
