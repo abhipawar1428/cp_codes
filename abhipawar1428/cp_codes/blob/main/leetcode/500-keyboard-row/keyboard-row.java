@@ -18,9 +18,12 @@ class Solution {
                 ret.add(words[i]);
             }
         }
-      
-        return ret.toArray(new String[0]);
-    
+        String retArr[]=new String[ret.size()];
+        for(int i=0;i<retArr.length;i++){
+            retArr[i]=ret.get(i);
+        }
+        
+        return retArr;
     }
     boolean isInRow(StringBuffer sb,String str){
         for(int i=1;i<str.length();i++){
