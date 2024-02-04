@@ -3,7 +3,7 @@ class Solution {
         StringBuffer sb=new StringBuffer("qwertyuiop");
         StringBuffer sb2=new StringBuffer("asdfghjkl");
         StringBuffer sb3=new StringBuffer("zxcvbnm");
-        ArrayList<String> ret=new ArrayList<>();
+        List<String> ret=new LinkedList<>();
         for(int i=0;i<words.length;i++){
             boolean result=false;
             String string=words[i].toLowerCase();
@@ -18,11 +18,12 @@ class Solution {
                 ret.add(words[i]);
             }
         }
-        String retArr[]=new String[ret.size()];
-        for(int i=0;i<retArr.length;i++){
-            retArr[i]=ret.get(i);
-        }
-        return retArr;
+        // String retArr[]=new String[ret.size()];
+        // for(int i=0;i<retArr.length;i++){
+        //     retArr[i]=ret.get(i);
+        // }
+        return ret.toArray(new String[0]);
+        //return retArr;
     }
     boolean isInRow(StringBuffer sb,String str){
         for(int i=1;i<str.length();i++){
