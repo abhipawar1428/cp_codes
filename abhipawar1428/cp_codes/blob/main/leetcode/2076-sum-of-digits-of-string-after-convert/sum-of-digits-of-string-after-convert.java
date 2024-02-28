@@ -6,7 +6,7 @@ class Solution {
         for(int i=0;i<s.length();i++){
             sb.append((int)s.charAt(i)-96);
         }
-        System.out.println(sb.length());
+        
 
         if(k>=1){
             for(int i=0;i<sb.length();i++){
@@ -15,7 +15,7 @@ class Solution {
             }
             k--;
         }
-        System.out.println(num);
+        
         while(k!=0){
             k--;
             int temp=num;
