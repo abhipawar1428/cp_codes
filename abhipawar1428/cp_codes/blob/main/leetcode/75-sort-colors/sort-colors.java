@@ -10,10 +10,7 @@ class Solution {
                 t++;
             }
         }
-        System.out.println(z);
-                System.out.println(o);
-
-        System.out.println(t);
+        
 
         for(int i=0;i<nums.length;i++){
             if(i<z){
